@@ -1,7 +1,9 @@
 # ElevateAI
 
-Deployed via Cloudflare Pages.
+Deployed via Cloudflare Pages with Astro + Tailwind.
 
-1. Push to GitHub.
-2. Link repo in Cloudflare Pages.
-3. Enjoy blazing-fast performance with Astro + Tailwind.
+## Setup
+
+1. Run `npm install`
+2. Run `npm run build`
+3. Deploy via GitHub to Cloudflare Pages
