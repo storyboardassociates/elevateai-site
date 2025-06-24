@@ -1,16 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import QuoteOfTheDay from '../components/QuoteOfTheDay.astro';
-import MicrolessonPreview from '../components/MicrolessonPreview.astro';
 ---
 <BaseLayout>
-  <section class="text-center py-16">
-    <h1 class="text-4xl font-bold text-white">ElevateAI</h1>
-    <p class="mt-2 text-lg text-gray-300">Lead Beyond Limits</p>
+  <section class="text-white p-10">
+    <h1 class="text-4xl font-bold">Welcome to ElevateAI</h1>
+    <p class="mt-2 text-lg">This is your live deployment on Cloudflare Pages.</p>
+    <ul class="mt-6 space-y-2">
+      <li><a href="/daily" class="text-blue-400 underline">Go to Daily</a></li>
+      <li><a href="/subscribe" class="text-blue-400 underline">Subscribe</a></li>
+    </ul>
   </section>
-  <QuoteOfTheDay />
-  <MicrolessonPreview />
-  <div class="text-center mt-10">
-    <a href="/daily" class="text-blue-400 underline">Explore Daily Lessons</a>
-  </div>
 </BaseLayout>
