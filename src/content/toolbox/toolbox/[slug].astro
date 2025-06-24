@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getEntryBySlug } from 'astro:content';
+import { Astro } from 'astro';
+
+const { slug } = Astro.params;
+const tool = await getEntryBySlug('toolbox', slug);
+if (!tool) throw new Error(`Tool not found for slug: ${slug}`);
+---
+<BaseLayout>
+  <article class="prose prose-invert max-w-3xl mx-auto py-10">
+    <h1>{tool.data.title}</h1>
+    <p class="text-gray-400">{tool.data.description}</p>
+    <div set:html={tool.body} />
+  </article>
+</BaseLayout>

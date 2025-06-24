@@ -1,0 +1,10 @@
+---
+import { getEntryBySlug } from 'astro:content';
+const quoteEntry = await getEntryBySlug('quotes', 'quote-of-the-day');
+const quoteText = quoteEntry?.data?.text ?? "“Leadership is influence.”";
+---
+
+<section class="my-8">
+  <h2 class="text-2xl font-semibold text-yellow-400">Quote of the Day</h2>
+  <blockquote class="italic text-lg mt-2 text-gray-200">"{quoteText}"</blockquote>
+</section>

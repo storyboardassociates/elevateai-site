@@ -1,1 +1,16 @@
-<html><head><title>ElevateAI</title></head><body><h1>Welcome to ElevateAI</h1></body></html>
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import QuoteOfTheDay from '../components/QuoteOfTheDay.astro';
+import MicrolessonPreview from '../components/MicrolessonPreview.astro';
+---
+<BaseLayout>
+  <section class="text-center py-16">
+    <h1 class="text-4xl font-bold text-white">ElevateAI</h1>
+    <p class="mt-2 text-lg text-gray-300">Lead Beyond Limits</p>
+  </section>
+  <QuoteOfTheDay />
+  <MicrolessonPreview />
+  <div class="text-center mt-10">
+    <a href="/daily" class="text-blue-400 underline">Explore Daily Lessons</a>
+  </div>
+</BaseLayout>
