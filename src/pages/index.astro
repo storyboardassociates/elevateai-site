@@ -1,25 +1,13 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>ElevateAI – Leadership Redefined</title>
-    <style>
-      body {
-        background-color: #0a1f44;
-        color: white;
-        font-family: sans-serif;
-        padding: 3rem;
-      }
-      a {
-        color: #fbb040;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Welcome to ElevateAI</h1>
-    <p>This is a test to verify successful deployment to Cloudflare Pages.</p>
-    <ul>
-      <li><a href="/daily">Go to Daily Microlessons</a></li>
-      <li><a href="/subscribe">Subscribe</a></li>
-    </ul>
-  </body>
-</html>
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout>
+  <section class="text-center mt-10">
+    <h1 class="text-4xl font-bold">Welcome to ElevateAI</h1>
+    <p class="mt-2 text-gray-300">Your leadership journey starts here.</p>
+    <div class="mt-4 space-x-4">
+      <a href="/daily" class="text-blue-400 underline">Go to Daily</a>
+      <a href="/subscribe" class="text-blue-400 underline">Subscribe</a>
+    </div>
+  </section>
+</BaseLayout>

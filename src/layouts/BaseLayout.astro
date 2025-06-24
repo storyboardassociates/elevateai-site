@@ -1,26 +1,16 @@
 ---
 import '../styles/global.css';
 ---
-<html lang="en" class="bg-slate-900 text-white">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ElevateAI</title>
   </head>
-  <body class="font-sans">
-    <header class="bg-slate-800 p-4 text-center">
-      <nav>
-        <a href="/" class="px-4 text-white">Home</a>
-        <a href="/daily" class="px-4 text-white">Daily</a>
-        <a href="/toolbox" class="px-4 text-white">Toolbox</a>
-        <a href="/subscribe" class="px-4 text-white">Subscribe</a>
-      </nav>
-    </header>
-    <main class="p-4">
+  <body class="bg-gray-900 text-white font-sans min-h-screen">
+    <header class="bg-gray-800 p-4 text-center text-xl font-bold">ElevateAI</header>
+    <main class="p-6">
       <slot />
     </main>
-    <footer class="text-center text-sm text-gray-500 p-4">
-      &copy; 2025 ElevateAI. All rights reserved.
-    </footer>
+    <footer class="text-center text-sm text-gray-400 py-4">© 2025 ElevateAI</footer>
   </body>
 </html>
